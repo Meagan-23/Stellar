@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.collections.FXCollections?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StellarCalculator">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="82.0" prefWidth="600.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="232.0" text="Stellar Properties Calculator">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="184.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="48.0" prefWidth="318.0" text="This calculator can be used to calculate properties of  stars&#10;commonly used in astrophysical research." textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets left="141.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="61.0" prefWidth="600.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" />
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="angularSize" mnemonicParsing="false" onAction="#angularSize" prefHeight="28.0" prefWidth="132.0" text="Angular size">
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="190.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="resolution" mnemonicParsing="false" onAction="#resolution" prefHeight="28.0" prefWidth="132.0" text="Resoultion">
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="190.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="parallax" mnemonicParsing="false" onAction="#parallax" prefHeight="28.0" prefWidth="132.0" text="Parallax">
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="190.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="hourAngle" mnemonicParsing="false" onAction="#hourAngle" prefHeight="28.0" prefWidth="132.0" text="Hour Angle">
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="190.0" />
+                           </VBox.margin>
+                        </Button>
+                        <VBox prefHeight="159.0" prefWidth="600.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>
